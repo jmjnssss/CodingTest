@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>HOME</h1>
+	<!-- web.xml : 프로젝트 "설정" -->
+	<!-- 배포 기술자 (deployment descriptor) -->
+	<!-- 없으면 java eetools 들어가서 만들면 됨 -->
+	
+	<a href="hello.do?class=command=get">hello</a>
+	<br/>
+	<form action="controller.do" method="post">
+	
+	
+	</form>
+		
+</body>
+</html>

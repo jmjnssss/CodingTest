@@ -1,0 +1,22 @@
+package com.mvc.dao;
+
+import java.util.List;
+
+import com.mvc.dto.MVCBoardDto;
+
+public interface MVCBoardDao {
+	
+	String SELECT_LIST_SQL = " SELECT SEQ, WRITER, TITLE, CONTENT, REGDATE "
+			               + " FROM MVCBOARD "
+			               + " ORDER BY SEQ DESC ";
+	String SELECT_ONE_SQL = "";
+	String INSERT_SQL = "";
+	String UPDATE_SQL = "";
+	String DELETE_SQL = "";
+	
+	public List<MVCBoardDto> selectList();
+	public MVCBoardDto selectOne(int seq);
+	public int insert(MVCBoardDto dto);
+	public int update(MVCBoardDto dto);
+	public int delete(int seq);
+}

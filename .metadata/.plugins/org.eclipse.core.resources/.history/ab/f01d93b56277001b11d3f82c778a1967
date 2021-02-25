@@ -1,0 +1,25 @@
+package com.mvc.db;
+
+import java.sql.Connection;
+
+public class JDBCTemplate {
+
+	public static Connection getConnection() {
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String url = "";
+		String user = "kh";
+		String password = "kh";
+		
+		return null;
+	
+	}
+	
+	
+	
+}

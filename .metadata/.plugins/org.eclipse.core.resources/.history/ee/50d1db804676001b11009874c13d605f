@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- C:\tomcat\webapps\examples\jsp\jsp2\el -->
+	<a href="controller.do?command=el">Expression Language</a>
+		<form action="controller.do" method="post">
+		<input type="hidden" name="command" value="post">
+		<input type="submit" value="hello">
+	</form>
+</body>
+</html>

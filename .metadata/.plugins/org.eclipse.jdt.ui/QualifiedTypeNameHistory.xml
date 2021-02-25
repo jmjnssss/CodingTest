@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.myboard.db.JDBCTemplate"/>
+    <fullyQualifiedTypeName name="com.myboard.dto.MyBoardDto"/>
+    <fullyQualifiedTypeName name="com.board.dto.MyBoardDto"/>
+    <fullyQualifiedTypeName name="com.muldel.dto.MDBoardDto"/>
+    <fullyQualifiedTypeName name="com.muldel.dao.MDBoardDao"/>
+    <fullyQualifiedTypeName name="com.muldel.dao.MDBoardDaoImpl"/>
+    <fullyQualifiedTypeName name="com.muldel.db.JDBCTemplate"/>
+    <fullyQualifiedTypeName name="com.mvc.db.JDBCTemplate"/>
+    <fullyQualifiedTypeName name="com.mvc.dao.MVCBoardDao"/>
+    <fullyQualifiedTypeName name="com.mvc.dao.MVCBoardDaoImpl"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="com.login.dao.MYMemberDao"/>
+    <fullyQualifiedTypeName name="com.login.db.JDBCTemplate"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.login.dto.MYMemberDto"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.PageContext"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.el.controller.ELController"/>
+    <fullyQualifiedTypeName name="com.el.dto.Score"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.mvc.biz.MVCBoardBiz"/>
+    <fullyQualifiedTypeName name="com.mvc.biz.MVCBoardBizImpl"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.mvc.dto.MVCBoardDto"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

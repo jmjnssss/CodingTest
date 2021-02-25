@@ -1,0 +1,29 @@
+package com.mvc.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCTemplate {
+
+	public static Connection getConnection() {
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "kh";
+		String password = "kh";
+		Connection con = null;
+		
+		con  = DriverManager.getConnection(url, user, password);
+		
+		return con;
+	
+	}
+	
+	
+	
+}

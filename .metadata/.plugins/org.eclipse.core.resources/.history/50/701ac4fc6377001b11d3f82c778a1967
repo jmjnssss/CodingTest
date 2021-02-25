@@ -1,0 +1,10 @@
+package cpm.mvc.biz;
+
+import com.mvc.dao.MVCBoardDao;
+import com.mvc.dao.MVCBoardDaoImpl;
+
+public interface MVCBoardBiz {
+	
+	MVCBoardDao dao = MVCBoardDaoImpl();
+
+}

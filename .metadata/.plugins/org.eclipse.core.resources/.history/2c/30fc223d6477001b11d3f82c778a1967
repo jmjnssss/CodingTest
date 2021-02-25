@@ -1,0 +1,27 @@
+package cpm.mvc.biz;
+
+import java.util.List;
+
+import com.mvc.dao.MVCBoardDao;
+import com.mvc.dao.MVCBoardDaoImpl;
+import com.mvc.dto.MVCBoardDto;
+
+public interface MVCBoardBiz {
+	
+	MVCBoardDao dao = new MVCBoardDaoImpl();
+
+	
+	
+	public List<MVCBoardDto> selectList(){
+		
+		return dao.selectList();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

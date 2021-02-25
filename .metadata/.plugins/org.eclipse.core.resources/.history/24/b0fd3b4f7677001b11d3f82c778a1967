@@ -1,0 +1,78 @@
+package com.mvc.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.dto.MVCBoardDto;
+
+import cpm.mvc.biz.MVCBoardBiz;
+import cpm.mvc.biz.MVCBoardBizImpl;
+
+
+@WebServlet("/MVCController")
+public class MVCController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+    
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+	
+	
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF8");
+	
+		MVCBoardBiz biz = new MVCBoardBizImpl(); 
+	
+		String command = request.getParameter("command");
+		System.out.println("["+command+"]");
+	
+		if(command.equals("list")) {
+			// 1.
+			// 2.
+			List<MVCBoardDto> list = biz.selectList();
+			// 3.
+			request.setAttribute("list", list);
+			// 4.
+			response.sendRedirect("mvclist.jsp");
+			
+		} else if(command.equals("list2")) {
+			// 1.
+			// 2.
+			List<MVCBoardDto> list = biz.selectList();
+			// 3.
+			request.setAttribute("list2", list);
+			// 4.
+			
+			
+			
+		
+		} else if(command.equals("insertform")) {
+			
+		} else if(command.equals("insertres")) {
+			
+		} else if(command.equals("selectone")) {
+			
+		}
+		
+	
+	}
+	
+	public void dispatch(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException {
+		RequestDispatcher dispatch = request.getRequestDispatcher(path);
+		dispatch.forward(request, response);
+		
+	}
+
+}

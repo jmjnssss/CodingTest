@@ -1,0 +1,14 @@
+package com.mvc.dao;
+
+public interface MVCBoardDao {
+	
+	String SELECT_LIST_SQL = "";
+	String SELECT_ONE_SQL = "";
+	String INSERT_SQL = "";
+	String UPDATE_SQL = ""
+	String DELETE_SQL = "";
+	
+	
+	
+
+}

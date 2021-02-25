@@ -1,0 +1,99 @@
+package com.mvc.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.biz.MVCBoardBiz;
+import com.mvc.biz.MVCBoardBizImpl;
+import com.mvc.dto.MVCBoardDto;
+
+@WebServlet("/MyServlet")
+public class MyServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+    
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
+		MVCBoardBiz biz = new MVCBoardBizImpl();
+		
+		String command = request.getParameter("command");
+		System.out.println("[" + command + "]");
+		
+		if(command.equals("list")) {
+			// 1. 보내준 값 있으면 받기
+			// 2. db 호출 (전달할 값 있으면 전달)
+			List<MVCBoardDto> list = biz.selectList();
+			// 3. 화면에 보내줄 값 있으면 request 객체에 담기
+			request.setAttribute("list", list);
+			// 4. 보내기
+			dispatch(request, response, "mylist.jsp");
+			
+			
+		} else if(command.equals("insertform")) {
+			// 1.
+			// 2.
+			// 3.
+			// 4.
+			response.sendRedirect("myinsert.jsp");
+			
+			
+			
+		}
+		
+		
+		
+	}
+	
+
+	public void dispatch(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException {
+		RequestDispatcher dispatch = request.getRequestDispatcher(path);
+		dispatch.forward(request, response);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

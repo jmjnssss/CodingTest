@@ -1,0 +1,18 @@
+package com.mvc.dto;
+
+import java.util.Date;
+
+public class MVCBoardDto {
+
+		int seq;
+		String writer;
+		String title;
+		String content;
+		Date regdate;
+		
+		public MVCBoardDto() {
+			
+		}
+		
+		
+}
